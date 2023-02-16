@@ -82,10 +82,11 @@ def head_prediction(model, relation, tail, training, label, entity_label):
 
 if __name__ == "__main__":
     # Input KG
-    tf, triple_data, entity_label, relation_label = load_dataset('frenchEncoded.nt')
+    tf, triple_data, entity_label, relation_label = load_dataset('./KG/FrenchRoyalty.nt')
     # Split them into train, test
     training, testing = tf.split(random_state=1234)
-
+    if not os.path.exists('embed/french/'):
+        os.makedirs('embed/french/')
     # ## Defining models which InterpretME will currently using for embeddings. If models like ConvE or ComplEx, please define the bacth size in create model()
     models = 'TransE'
     model, results = create_model(tf_training=training,tf_testing=testing, embedding=models, n_epoch=200, path='embed/french/')
