@@ -1,0 +1,57 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+dbo:Person  a  rdfs:Class .
+dbo:Spouse  a  rdfs:Class .
+
+dbo:Spouse rdfs:subClassOf dbo:Person.
+ 
+dbo:father a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person .
+
+dbo:hasSpouse a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person .
+
+foaf:name a rdfs:Property , owl:DatatypeProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  xsd:string .
+
+dbo:mother a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person .
+
+dbo:parent a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person .
+
+dbo:successor a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person .
+
+dbo:predecessor a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person .
+
+dbo:gender a rdfs:Property , owl:DatatypeProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  xsd:string .
+
+dbo:child a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person .
+
+dbo:spouse a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person ;
+    rdfs:subPropertyOf dbo:marriedTo .
+
+dbo:marriedTo a rdfs:Property , owl:ObjectProperty;
+    rdfs:domain dbo:Person ;
+    rdfs:range  dbo:Person .
+    
