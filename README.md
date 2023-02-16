@@ -13,6 +13,7 @@ The statistics about the KG in numbers:
 | #triples | #entities | #predicates |
 |:--------:|:---------:|:-----------:|
 |  12560   |   2260    |     15      |
+
 Here the predictive task is link prediction of a tail entity; for instance *<dbo:CharlestheSimple, hasSpouse, dbo:Yes>*. The embedding model i.e., TransE is used to represent the entities and relations into low dimensional vectors. The performed evaluation of tail prediction is stored in `Results`. 
 
 The results section shows the evaulation of the model into subcategory: `LP model` and `InterprtME`. In InterpretME the two explanations: **necessary** and **sufficient** are presented. The necessary shows the evaluation of removing the combination of facts; leads to worsen the score and tail rank.
