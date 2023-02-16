@@ -1,5 +1,5 @@
 # Exploiting Semantics for Explaining Link Prediction over Knowledge Graphs
-![Motivating Example](./images/Motivating example ESWC'23 paper.svg "Motivating Example")
+![Motivating Example](./Images/Motivating example ESWC'23 paper.svg "Motivating Example")
 ## InterpretME
 Explainability is the degree to which humans can understand the decisions made by computational frameworks. Out of these machine learning traits, extracting explanations is essential, particularly because they are
 often opaque, and the explainability of the outcomes is partially achieved. This repository contains the code for a simple demonstration of the evaluating the link prediction models over KGs.
