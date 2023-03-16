@@ -16,13 +16,13 @@ The statistics about the KG in numbers:
 
 Here the predictive task is link prediction of a tail entity; for instance *<dbo:CharlestheSimple, hasSpouse, dbo:Yes>*. The embedding model i.e., TransE is used to represent the entities and relations into low dimensional vectors. The performed evaluation of tail prediction is stored in `Results`. 
 
-The results section shows the evaulation of the model into subcategory: `LP model` and `InterprtME`. In InterpretME the two explanations: **necessary** and **sufficient** are presented. The necessary shows the evaluation of removing the combination of facts; leads to worsen the score and tail rank.
+The results section shows the evaulation of the model into subcategory: `LP model` and `InterpretME`. In InterpretME the two explanations: **necessary** and **sufficient** are presented. The necessary shows the evaluation of removing the combination of facts; leads to worsen the score and tail rank.
 In sufficient explanations, we use the ontology on top of the extracted necessary explanations, and thus infer new insights. Retrained the model with new facts; leads to change the score and rank better. In the paper we report `Hits@1` as top-1 accuracy, Mean Reciprocal Rank, plausible score and the rank. 
 
 ### Getting Started
 Clone the repository
 ```python
-git clone https://github.com/SDM-TIB/Semantic_Explanation_over_KGs
+git clone git@github.com:SDM-TIB/LinkPrediction_Explanations_over_KGs.git
 ```
 Install prerequisites
 ```python
